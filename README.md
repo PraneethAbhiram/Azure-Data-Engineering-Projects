@@ -1,100 +1,68 @@
-🚀 Azure Data Engineering Projects Portfolio
 
-This repository showcases multiple hands-on Azure Data Engineering projects demonstrating real-world data ingestion, validation, and orchestration using Azure cloud services.
+---
 
-🏗 Tech Stack
+# 🥇 Project 1: End-to-End Ingestion (ADLS → ADF → Azure SQL)
 
-Azure Data Lake Storage Gen2
+### 📌 Overview  
+Built a complete Azure Data Factory pipeline to ingest a **pipe-delimited text file** from **Azure Data Lake Storage Gen2** into **Azure SQL Database**.
 
-Azure Data Factory
+### 🏗 Architecture  
+**ADLS (TXT)** → **Azure Data Factory** → **Azure SQL Database**
 
-Azure SQL Database
+### 🎯 Key Features
+- ✅ Cloud file ingestion from ADLS  
+- ✅ Azure Data Factory Copy activity  
+- ✅ Schema mapping & type handling  
+- ✅ Structured relational storage in Azure SQL  
 
-SQL
+### 📈 Learning Outcomes
+- Built a full cloud ETL pipeline  
+- Practiced ADLS → ADF → Azure SQL workflow  
+- Designed and validated SQL tables  
 
-📂 Repository Structure
-data/        → Sample input datasets  
-sql/         → Table creation, validation & transformation scripts  
-pipelines/   → Pipeline screenshots (organized by project)  
-docs/        → Architecture diagrams & notes  
+📁 **Screenshots:**  
+👉 `pipelines/project-01/`
 
-🥇 Project 1: End-to-End Ingestion (ADLS → ADF → Azure SQL)
-📌 Overview
+---
 
-Built an end-to-end Azure Data Factory pipeline to ingest a pipe-delimited text file from Azure Data Lake Storage Gen2 into Azure SQL Database.
+# 🥈 Project 2: Conditional Ingestion Pipeline (SQL → ADLS)
 
-🏗 Architecture
+### 📌 Overview  
+Designed a **control-flow driven Azure Data Factory pipeline** that loads data from **Azure SQL to Azure Data Lake only when the source contains more than 500 records.**
 
-ADLS (TXT) → Azure Data Factory → Azure SQL Database
+### 🏗 Architecture  
+**Azure SQL** → **ADF (Lookup + If Condition)** → **ADLS**
 
-🎯 Key Features
+### 🎯 Key Features
+- ✅ Lookup activity to fetch source record count  
+- ✅ If Condition for dynamic pipeline control  
+- ✅ Conditional SQL → ADLS ingestion  
+- ✅ Prevents unnecessary data loads  
 
-Azure Data Lake file ingestion
+### 📈 Learning Outcomes
+- Implemented pre-ingestion validation logic  
+- Built conditional & decision-based pipelines  
+- Applied real-world orchestration patterns  
 
-Azure Data Factory Copy activity
+📁 **Screenshots:**  
+👉 `pipelines/project2_conditional_ingestion/`
 
-Schema mapping & type handling
+---
 
-Azure SQL structured storage
+## 🚀 Planned Enhancements
 
-📈 Learning Outcomes
+- ⭐ Parameterized multi-table ingestion framework  
+- ⭐ Raw → Clean → Curated (lakehouse layering)  
+- ⭐ CSV/JSON → Parquet optimization pipeline  
+- ⭐ Incremental load & automation workflows  
 
-Built cloud-based ETL pipeline
+---
 
-Practiced ADLS → ADF → Azure SQL flow
+## 👨‍💻 About This Repository
 
-Designed and validated SQL tables
+This repository is designed as a **growing Azure Data Engineering portfolio**, focused on:
 
-📁 Screenshots:
-pipelines/project-01/
-
-🥈 Project 2: Conditional Ingestion Pipeline (SQL → ADLS)
-📌 Overview
-
-Designed a control-flow based Azure Data Factory pipeline that loads data from Azure SQL into Azure Data Lake only when the source contains more than 500 records.
-
-🏗 Architecture
-
-Azure SQL → ADF (Lookup + If Condition) → ADLS
-
-🎯 Key Features
-
-Lookup activity for record count validation
-
-If Condition for pipeline control flow
-
-Conditional SQL → ADLS ingestion
-
-Prevents unnecessary data loads
-
-📈 Learning Outcomes
-
-Implemented pre-ingestion validation logic
-
-Built conditional pipelines
-
-Applied real-world orchestration patterns
-
-📁 Screenshots:
-pipelines/project2_conditional_ingestion/
-
-📌 Future Enhancements (Planned)
-
-Parameterized multi-table ingestion framework
-
-Raw → Clean → Curated (Lakehouse layering)
-
-CSV/JSON → Parquet conversion pipeline
-
-Incremental loading & scheduling
-
-👨‍💻 About this Repository
-
-This repository is designed as a growing Azure Data Engineering portfolio, focusing on:
-
-scalable ingestion pipelines
-
-data validation frameworks
-
-real-world cloud engineering patterns
-
+- ✔ scalable data ingestion  
+- ✔ data quality & validation checks  
+- ✔ reusable cloud pipelines  
+- ✔ real-world engineering design patterns  
