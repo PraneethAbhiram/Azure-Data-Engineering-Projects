@@ -1,4 +1,7 @@
----
+# 🚀 Azure Data Engineering Projects Portfolio
+
+...
+
 
 # 🥇 Project 1: End-to-End Ingestion (ADLS → ADF → Azure SQL)
 
